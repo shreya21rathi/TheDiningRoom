@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Dining Room</title>
+    <link rel = "icon" href = "https://www.clipartmax.com/png/middle/112-1129793_healthy-food-logo-png.png" type = "image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        .centered {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            align: center;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .center {
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .book {
+             background-color: brown;
+             border: 3px solid white;
+             color: white;
+             font-size: 20px;
+        }
+        .book:hover {
+            background-color: red;
+            color: white;
+        }
+        table, td{
+            text-align: center;
+            vertical-align: middle;
+        }
+        li.a{
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .background{
+            background-image: url("https://savageuniversal.com/wp-content/uploads/2017/02/1-textured-brown-printed-vinyl-backdrop-1000x1500.jpg");
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat-y;
+        }
+        .para {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+        table {
+            width: 200px;
+        }
+        .middle {
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 15%;
+            margin-bottom: 15%;
+        }
+        .black {
+            text-color: black;
+        }
+        .carousel-inner img {
+            width: 1106px;
+            height: 720px;
+        }
+        .center1 {
+            margin-left: 15%;
+            margin-right: 13%;
+        }
+    </style>
+    <script>
+        function openWin(){
+            window.open("Form.html");
+        };
+        $(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <!--Navigation Tabs-->
+        <nav class="navbar navbar-expand-sm bg-warning fixed-top p-3" style="height: 55px">
+        <ul class="nav nav-collapse">
+            <li class="nav-item">
+                <a class="nav-link text-dark " data-toggle="tab" href="#home"><h2>Home</h2></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#about"><h2>About Us</h2></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#menu"><h2>Menu</h2></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#gallery"><h2>Gallery</h2></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#contact"><h2>Contact Us</h2></a>
+            </li>
+        </ul>
+        </nav>
+
+        <!--Tabs Content-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home" >
+                <div>
+                    <img src="https://www.hungryforever.com/wp-content/uploads/2017/10/food-bogger-india-hf-1280x720.jpg" style="width:100%;">
+                </div>
+                <div class="centered text-white">
+                    <br><br><br>
+                    <h3 align="center">Welcome to our Restaurant</h3>
+                    <h1 align="center">The Dining Room</h1>
+                    <br><br><br><br><br><br><br><br><br>
+                    <div class="centered">
+                    <button class="btn book" value="Open Window" onclick="openWin()">Book your Table</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="about">
+            <div class="background">
+                <div class="col-md-10 centered">
+                    <h3 class="black"><u>Our Story</u></h3>
+                    <div class="para black">
+                        <img alt="" src="" class="img-responsive pull-right aboutImg" width="30%"/>
+                        <p class="text-justify">The destination of the finest and most authentic South Indian gastronomical experiences. With state of art ambience and authentic food preparation, The Dining Room promises to take you right into the interiors of Karnataka to give you the best South Indian fine dining experiences. The Dining Room, a Sanskrit term meaning supplication, is food offered to god as part of a worship ritual, before eating it. It is considered as the purest preparation done with complete care and love to give a flavor and experience above all. </p>
+                        <p class="text-justify">The charisma of The Dining Room is a result of phenomenal efforts, with advanced kitchen equipment, a team of highly trained staff and most importantly the noteworthy endeavors of <span class="green">Mr. Shekar Bangera</span>. Mr Shekar with more than two decades of experience in the food and beverage industry has successfully managed to compile a pure hygienic food joint which serves heavenly South Indian cuisine in a beautiful temple-like setting &amp; harmonized with Southern devotional music that soothes your mind. True to its name "The Dining Room" has in fact turned out to be a real God-sent for all the Delhi NCR folks who covet for pure Southern delicacies </p>
+                        <p class="text-justify">Since 1994, this gem has grown in popularity through the exceptional quality of service and food. The Dining Room won the "BLUE MOON AWARD" in the food category and certifies as the holder of "THE FINEST RESTAURANTS OF INDIA" by Citibank Diners Club. It has also been chosen for the best restaurant by "BEST OF INDIA PRODUCTS" for 2 consecutive years. The Dining Room had been appreciated hugely for providing quality South Indian food at Pragati Maidan "INDIAN INTERNATIONAL TRADE FAIR", organized by ITPO, where The Dining Room participated for 3 years. The Dining Room is also a member of Federation of Hotel &amp; Restaurant Association of India and Hotel &amp; Restaurant Association of Northern India. </p>
+                        <br><br><br>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="menu">
+                <div class="container">
+                    <br><br><br>
+                    <table class="table table-borderless table-condensed table-sm">
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <ul>
+                                    <li class="a">Rava Upma</li>
+                                    <li class="a">Vegetable Upma</li>
+                                </ul>
+                            </td>
+                            <td><img src="https://www.whiskaffair.com/wp-content/uploads/2020/09/Upma-2-3.jpg" width="300" height="300"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Rava-Idli-Thumbnail.jpg" width="300" height="300"></td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <ul>
+                                    <li class="a">Classic Idli</li>
+                                    <li class="a">Rava Idli</li>
+                                    <li class="a">Vegetable Idli</li>
+                                    <li class="a">Fried Idli</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <ul>
+                                    <li class="a">Plain Dosa</li>
+                                    <li class="a">Masala Dosa</li>
+                                    <li class="a">Karampodi Dosa</li>
+                                    <li class="a">Paneer Masala Dosa</li>
+                                </ul>
+                            </td>
+                            <td><img src="https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg" width="300" height="300"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://ministryofcurry.com/wp-content/uploads/2020/09/uttapam-4.jpg" width="300" height="300"></td>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <ul>
+                                    <li class="a"></li>
+                                    <li class="a"></li>
+                                    <li class="a"></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;">
+                                <ul>
+                                    <li class="a">Sambar Vada</li>
+                                    <li class="a">Dahi Vada</li>
+                                    <li class="a">Dal Vada</li>
+                                    <li class="a">Rasam Vada</li>
+                                </ul>
+                            </td>
+                            <td><img src="https://s9c2c8i7.rocketcdn.me/wp-content/uploads/2019/12/medu-wada.jpg" width="300" height="300"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="gallery">
+                <div>
+                    <div class="center1 black_bg">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <!--Carousel Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExample" data-slide-to="1"></li>
+                                <li data-target="#carouselExample" data-slide-to="2"></li>
+                                <li data-target="#carouselExample" data-slide-to="3"></li>
+                                <li data-target="#carouselExample" data-slide-to="4"></li>
+                                <li data-target="#carouselExample" data-slide-to="5"></li>
+                                <li data-target="#carouselExample" data-slide-to="6"></li>
+                            </ol>
+                            <!--Carousel Slides-->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="2000">
+                                    <img src="https://cookbook.pfeiffer.net.au/files/dosa.jpg" alt="Dosa">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="https://www.thestatesman.com/wp-content/uploads/2019/04/idli.jpg" alt="Idli">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="https://www.carveyourcraving.com/wp-content/uploads/2020/04/Vegetable-uttapam-recipe.jpg">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/nkw0roy1zzsekfbejscc" alt="Dosa1">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="https://i1.wp.com/vegecravings.com/wp-content/uploads/2018/02/Medu-Vada-Recipe-Step-By-Step-Instructions.jpg?fit=2357%2C1885&quality=65&strip=all&ssl=1" alt="Dosa1">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="http://tanaysharma.zohosites.com/Meduvada-recipe.jpg">
+                                </div>
+                                <div class="carousel-item" data-interval="2000">
+                                    <img src="https://www.fohlio.com/blog/wp-content/uploads/2017/09/The-Psychology-of-Restaurant-Interior-Design-Part-5-Architecture-Fohlio-Faith-and-Flower.jpg">
+                                </div>
+                            </div>
+                            <!--Carousel Previous Next Controls-->
+                            <a class="carousel-control-prev" href="#carouselExample" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact">
+                <div class="container bcontent middle">
+                    <button class="btn" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Facebook" data-content="www.facebook.com/the_dining_room">
+                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" height="150px" width="150px" />
+                        </button>
+                    <button class="btn" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Instagram" data-content="@the_dining_room">
+                        <img src="data:image/jpeg;base64,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" height="150px" width="150px">
+                    </button>
+                    <button class="btn" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="WhatsApp" data-content="www.whatsappp.com/9876543210">
+                        <img src="data:image/jpeg;base64,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" height="150px" width="150px">
+                    </button>
+                </div>
+            </div>
+        </div><!--Tabs End-->
+
+        <div class="fixed-bottom bg-success text-center text-black" style="height:30px">
+            <p>Copyright © The Dining Room Restaurant. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
